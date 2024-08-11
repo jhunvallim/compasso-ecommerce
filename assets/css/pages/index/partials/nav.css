@@ -1,0 +1,32 @@
+.nav {
+  gap: 40px;
+  position: absolute;
+  width: 1240px;
+  height: 48px;
+  left: 100px;
+  top: 62px;
+}
+
+.nav-logo {
+  width: 160px;
+  height: 22px;
+  font-family: var(--title);
+  font-size: 32px;
+  line-height: 38px;
+  color: var(--primary-text);
+}
+
+.nav-links {
+  align-items: center;
+  gap: 24px;
+
+  width: 321px;
+  height: 22px;
+}
+
+.nav-links--menu {
+  align-items: center;
+  gap: 4px;
+  width: 57px;
+  height: 22px;
+}

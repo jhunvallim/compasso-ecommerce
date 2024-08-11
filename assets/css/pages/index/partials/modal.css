@@ -5,18 +5,23 @@
   left: 0px;
   top: 0px;
   background: var(--tertiary-color);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal-text {
-  position: absolute;
   width: 351px;
   height: 19px;
-  left: calc(50% - 351px / 2 - 0.5px);
-  top: calc(50% - 19px / 2 - 0.5px);
   font-family: var(--text-regular);
   font-size: 14px;
   line-height: 19px;
   color: var(--tertiary-text);
+}
+
+.modal-text--2{
+  font-weight: 500;
+  text-decoration: underline;
 }
 
 .modal-close--container {

@@ -11,9 +11,10 @@ h1, h2, h3, h4, h5, h6, p, a, span, button, input, label, select, option, textar
   color: var(--primary-text);
 }
 
-button{
+button, a{
   border: none;
   outline: none;
   background: none;
   cursor: pointer;
 }
+
