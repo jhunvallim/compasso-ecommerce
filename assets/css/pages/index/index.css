@@ -1,1 +1,10 @@
-@import '../../global/global.css';
+@import "../../global/global.css";
+@import './partials/modal.css';
+
+.homepage {
+  position: relative;
+  width: 1440px;
+  height: 4370px;
+  margin: auto;
+  background: var(--primary-color);
+}

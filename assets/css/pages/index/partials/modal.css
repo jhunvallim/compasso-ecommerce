@@ -1,0 +1,36 @@
+.modal {
+  position: absolute;
+  width: 1440px;
+  height: 38px;
+  left: 0px;
+  top: 0px;
+  background: var(--tertiary-color);
+}
+
+.modal-text {
+  position: absolute;
+  width: 351px;
+  height: 19px;
+  left: calc(50% - 351px / 2 - 0.5px);
+  top: calc(50% - 19px / 2 - 0.5px);
+  font-family: var(--text-regular);
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--tertiary-text);
+}
+
+.modal-close--container {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 1320px;
+  top: calc(50% - 20px / 2);
+}
+
+.modal-close--button {
+  position: absolute;
+  left: 17.18%;
+  right: 17.18%;
+  top: 17.17%;
+  bottom: 17.18%;
+}
