@@ -8,18 +8,18 @@
 }
 
 .nav-logo {
-  width: 160px;
-  height: 22px;
+  position: relative;
+  top: -5px;
   font-family: var(--title);
   font-size: 32px;
-  line-height: 38px;
+  line-height: normal;
   color: var(--primary-text);
+  
 }
 
 .nav-links {
   align-items: center;
   gap: 24px;
-
   width: 321px;
   height: 22px;
 }
@@ -29,4 +29,53 @@
   gap: 4px;
   width: 57px;
   height: 22px;
+  font-family: var(--text-regular);
+  font-size: 1rem;
+  color: var(--primary-text);
+}
+
+.nav-links--item {
+  a {
+    font-family: var(--text-regular);
+    font-size: 1rem;
+    color: var(--primary-text);
+  }
+}
+
+.search {
+  display: flex;
+  flex: 1 0 0;
+  padding: 12px 16px;
+  align-items: flex-start;
+  gap: 12px;
+  border-radius: 62px;
+  background: var(--secondary-color);
+}
+
+.search-button {
+  width: 24px;
+  height: 24px;
+}
+
+.search-input {
+  width: 500px;
+  color: rgba(0, 0, 0, 0.4);
+  font-family: var(--text-regular);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background: inherit;
+}
+
+.nav-side {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  width: 63px;
+  height: 24px;
+}
+
+.nav-cart {
+
 }
