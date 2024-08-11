@@ -1,0 +1,16 @@
+:root {
+  /* Colors */
+  --primary-color: #FFFFFF;
+  --secondary-color:#F2F0F1;
+  --tertiary-color: #000000;
+  --primary-text: #000000;
+  --secondary-text: #F2F0F1;
+  --tertiary-text: #FFFFFF;
+
+  /* Fonts */
+
+  --title: 'Integral', sans-serif;
+  --text-regular: 'Satoshi Regular', sans-serif;
+  --text-bold: 'Satoshi Bold', sans-serif;
+  --text-medium: 'Satoshi Medium', sans-serif;
+}
