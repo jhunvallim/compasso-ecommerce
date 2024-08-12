@@ -1,6 +1,7 @@
 @import "../../global/global.css";
 @import './partials/modal.css';
 @import './partials/nav.css';
+@import './partials/hero.css';
 
 .homepage {
   position: relative;
