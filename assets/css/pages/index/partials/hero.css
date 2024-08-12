@@ -7,8 +7,8 @@
 .hero-title {
   width: 557px;
   position: absolute;
-  left: 100px;
   top: calc(-17px + 103px);
+  left: 100px;
   font: 700 64px/64px var(--title);
   color: var(--text-primary);
   word-wrap: break-word;
@@ -70,4 +70,16 @@
   transform-origin: 0 0;
   border: 1px rgba(0, 0, 0, 0.1) solid;
   rotate: -90deg;
+}
+
+.star-little {
+  position: absolute;
+  top: 297px;
+  left: 750px;
+}
+
+.star-medium {
+  position: absolute;
+  top: 86px;
+  left: 1255px;
 }
