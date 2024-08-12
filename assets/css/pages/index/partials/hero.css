@@ -1,17 +1,14 @@
-.hero-background {
-  position: absolute;
-  top: 134px;
+.hero {
+  position: relative;
   width: 1440px;
   height: 663px;
-  /* flex-shrink: 0; */
 }
 
 .hero-title {
-  position: absolute;
   width: 557px;
-  height: 173px;
-  top: 220px;
+  position: absolute;
   left: 100px;
+  top: calc(-17px + 103px);
   font: 700 64px/64px var(--title);
   color: var(--text-primary);
   word-wrap: break-word;
@@ -20,8 +17,8 @@
 .hero-text {
   width: 545px;
   height: 33px;
-  position: absolute;
-  top: 436px;
+  position: relative;
+  top: calc(-5px + 308px);
   left: 100px;
   font: 16px/22px var(--text-regular);
   color: rgba(0, 0, 0, 0.6);
@@ -31,7 +28,7 @@
   width: 210px;
   height: 52px;
   position: absolute;
-  top: 507px;
+  top: 373px;
   left: 100px;
   display: flex;
   gap: 12px;
@@ -47,7 +44,7 @@
   width: 596px;
   height: 74px;
   position: absolute;
-  top: 607px;
+  top: 473px;
   left: 100px;
   justify-content: space-between;
 }
