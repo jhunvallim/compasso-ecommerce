@@ -1,15 +1,17 @@
+.header {
+  position: sticky;
+  top: 0;
+  height: 95px;
+  z-index: 1;
+  background: var(--primary-color);
+}
+
 .nav {
   gap: 40px;
-  position: absolute;
-  width: 1240px;
   height: 48px;
-  left: 100px;
-  top: 62px;
 }
 
 .nav-logo {
-  position: relative;
-  top: -5px;
   font-family: var(--title);
   font-size: 32px;
   line-height: normal;
