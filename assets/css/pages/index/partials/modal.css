@@ -13,24 +13,20 @@
 .modal-text {
   width: 351px;
   height: 19px;
-  font-family: var(--text-regular);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 19px;
+  font: 400 14px/19px var(--text-regular);
   color: var(--tertiary-text);
 }
 
 .modal-text--2{
-  font-family: var(--text-regular);
   height: 100%;
-  font-weight: 700;
+  font: 700 var(--text-regular);
   text-decoration: underline;
 }
 
 .modal-close--container {
-  position: absolute;
   width: 20px;
   height: 20px;
+  position: absolute;
   left: 1320px;
   top: 9px;
 }
