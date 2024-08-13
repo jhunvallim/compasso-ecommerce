@@ -19,6 +19,9 @@
 }
 
 .section-title {
+  margin-top: 70px;
+  text-transform: uppercase;
+  text-align: center;
   font: 700 48px var(--title);
   color: var(--primary-text);
 }
@@ -26,5 +29,3 @@
 .br {
   border: 1px solid red;
 }
-
-

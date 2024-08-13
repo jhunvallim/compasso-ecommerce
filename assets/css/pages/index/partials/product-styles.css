@@ -1,0 +1,50 @@
+.product-styles {
+  background: var(--secondary-color);
+  border-radius: 40px;
+}
+
+.styles-browser {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;  
+  margin: 70px 0;
+  background: var(--secondary-color);
+  border-radius: 40px;  
+  
+}
+
+.styles-card a{
+  height: 289px;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  background:var(--primary-color);
+  
+}
+
+.styles-card a:hover {
+  
+}
+
+.small-card {
+  min-width: 407px;
+}
+
+.big-card {
+  min-width: 684px;
+}
+
+.small-card:hover, .big-card:hover {
+  filter:brightness(0.9);
+}
+
+.styles-card--name {
+  position: absolute;
+  top: 25px;
+  left: 36px;
+  font: 700 36px var(--text-regular);
+  color: var(--primary-text);
+}

@@ -1,11 +1,3 @@
-.products {  
-  h2 {
-    margin-top: 55px;
-    text-transform: uppercase;
-    text-align: center;
-  }
-}
-
 .products-container {
   margin-top: 55px;
   justify-content: center;

@@ -4,7 +4,7 @@
 @import './partials/hero.css';
 @import './partials/marcas.css';
 @import './partials/products-container.css';
-@import './partials/style-browser.css';
+@import './partials/product-styles.css';
 
 .homepage {
   position: relative;
