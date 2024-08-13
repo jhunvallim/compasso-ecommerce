@@ -1,14 +1,16 @@
 .hero {
   position: relative;
-  width: 1440px;
+  height: 663px;
+}
+
+.hero-content {
   height: 663px;
 }
 
 .hero-title {
   width: 557px;
-  position: absolute;
-  top: calc(-17px + 103px);
-  left: 100px;
+  position: relative;
+  top: 86px;
   font: 700 64px/64px var(--title);
   color: var(--text-primary);
   word-wrap: break-word;
@@ -17,9 +19,8 @@
 .hero-text {
   width: 545px;
   height: 33px;
-  position: relative;
-  top: calc(-5px + 308px);
-  left: 100px;
+  position: absolute;
+  top: 303px;
   font: 16px/22px var(--text-regular);
   color: rgba(0, 0, 0, 0.6);
 }
@@ -29,7 +30,6 @@
   height: 52px;
   position: absolute;
   top: 373px;
-  left: 100px;
   display: flex;
   gap: 12px;
   border-radius: 62px;
@@ -45,7 +45,6 @@
   height: 74px;
   position: absolute;
   top: 473px;
-  left: 100px;
   justify-content: space-between;
 }
 

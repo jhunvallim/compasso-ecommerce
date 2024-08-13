@@ -8,9 +8,19 @@
   flex-direction: row;
 }
 
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
 .center {
   justify-content: center;
   align-items: center;
+}
+
+.section-title {
+  font: 700 48px var(--title);
+  color: var(--primary-text);
 }
 
 .br {
