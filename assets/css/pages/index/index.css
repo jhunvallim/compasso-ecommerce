@@ -5,6 +5,7 @@
 @import './partials/marcas.css';
 @import './partials/products-container.css';
 @import './partials/product-styles.css';
+@import './partials/comments.css';
 
 .homepage {
   position: relative;

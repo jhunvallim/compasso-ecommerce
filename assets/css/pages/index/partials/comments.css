@@ -1,0 +1,84 @@
+.comments {
+  margin-bottom: 170px;
+}
+
+.comments-container {
+  position: relative;
+  margin-top: 55px;
+  /* border: 1px solid red; */
+  h2 {
+    font: 700 48px var(--title);
+    color: var(--primary-text);
+  }
+}
+
+.comments-container:before {
+  content: '';
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: -100px;
+  width: 100px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(2px);
+}
+
+.comments-container:after {
+  content: '';
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 1240px;
+  width: 100px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(2px);
+}
+
+.card-area {
+  gap: 20px;
+  position: relative;
+  left: -420px;
+  overflow: visible;
+}
+
+.card-container {
+  margin-top: 40px;
+  min-width: 400px;
+  height: 240px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.comments-card {
+  height: 200px;
+  position: relative;
+  top: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 336px;
+  img {
+    width: 139px;
+    height: 23px;
+  }
+  span {
+    font: 700 20px var(--text-regular);
+    &:after{
+      content: url('../../../../images/icon/verified.svg');
+      position: relative;
+      top: 5px;
+      left: 5px;
+    }
+  }
+  p {
+    font: 400 16px var(--text-regular);
+    color: rgba(0, 0, 0, 0.6);
+  }
+}
