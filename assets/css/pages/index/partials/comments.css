@@ -45,6 +45,15 @@
   overflow: visible;
 }
 
+.arrow-left{
+  float: right;
+  margin-right: 20px;
+}
+
+.arrow-right{
+  float: right;
+}
+
 .card-container {
   margin-top: 40px;
   min-width: 400px;
