@@ -6,6 +6,7 @@
 @import './partials/products-container.css';
 @import './partials/product-styles.css';
 @import './partials/comments.css';
+@import './partials/newsletter.css';
 
 .homepage {
   position: relative;
