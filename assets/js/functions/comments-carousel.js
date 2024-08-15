@@ -1,71 +1,89 @@
 
 
 // Comment Slider
-
+export function commentsCarousel() {
 const arrowRight = document.querySelector(".arrow-right");
 const arrowLeft = document.querySelector(".arrow-left");
-let firstCard = document.querySelector(".card-area");
+let cardArea = document.querySelector(".card-area");
 
 
-const scrollAmount = 400;
+const scrollAmount = 420;
 
 arrowLeft.addEventListener('click', (event) => {
   event.preventDefault();
-  const currentPosition = firstCard.scrollLeft;
+  const currentPosition = cardArea.scrollLeft;
   const targetPosition = currentPosition - scrollAmount;
-  firstCard.scrollTo({
+  cardArea.scrollTo({
     left: targetPosition,
     behavior: 'smooth'
   });
 });
 
  arrowRight.addEventListener('click', (event) => {
-   event.preventDefault();
-   const currentPosition = firstCard.scrollLeft;
+  //  event.preventDefault();
+   const currentPosition = cardArea.scrollLeft;
    const targetPosition = currentPosition + scrollAmount;
-   const scrollableWidth = firstCard.scrollWidth - firstCard.clientWidth;
+   const scrollableWidth = cardArea.scrollWidth - cardArea.clientWidth;
 
    if (targetPosition > scrollableWidth) {
-      // Volta ao início ao atingir o limite
-     firstCard.scrollTo({
-       left: 0,
-       behavior: 'smooth'
-     });
+    //Volta ao início
+    //  cardArea.scrollTo({
+    //    left: 0,
+    //    behavior: 'smooth'
+    //  });
+    const animationDuration = 500; 
+    const easeType = 'ease'; // Função de easing (pode ser 'ease-in', 'ease-out', etc.)
+
+    cardArea.scrollTo({
+      left: 0,
+      behavior: 'smooth'
+    });
+
+    // Transição
+    cardArea.style.transition = `transform ${animationDuration}ms ${easeType}`;
+    cardArea.style.transform = 'rotateY(360deg)';
+
+    // Limpa transição
+    setTimeout(() => {
+      cardArea.style.transition = '';
+      cardArea.style.transform = '';
+    }, animationDuration * 2);
    } else {
-     firstCard.scrollTo({
+     cardArea.scrollTo({
        left: targetPosition,
        behavior: 'smooth'
      });
    }
  });
+}
 
 // arrowRight.addEventListener('click', (event) => {
 //   event.preventDefault();
-//   const currentPosition = firstCard.scrollLeft;
+//   const currentPosition = cardArea.scrollLeft;
 //   const targetPosition = currentPosition + scrollAmount;
-//   const scrollableWidth = firstCard.scrollWidth - firstCard.clientWidth;
+//   const scrollableWidth = cardArea.scrollWidth - cardArea.clientWidth;
 
 //   if (targetPosition > scrollableWidth) {
 //     // Voltar ao início com efeito de carrossel
 //     const animationDuration = 1000; // Duração da animação em milissegundos
-//     const easingFunction = 'ease-out'; // Função de easing (pode ser 'ease-in', 'ease-out', etc.)
+//     const easeType = 'ease-out'; // Função de easing (pode ser 'ease-in', 'ease-out', etc.)
 
-//     firstCard.scrollTo({
+//     cardArea.scrollTo({
 //       left: 0,
 //       behavior: 'smooth'
 //     });
 
 //     // Adicionar a transição suave
-//     firstCard.style.transition = `transform ${animationDuration}ms ${easingFunction}`;
-//     firstCard.style.transform = 'rotate3d(1, 2, 100, 360deg)';
+//     cardArea.style.transition = `transform ${animationDuration}ms ${easeType}`;
+//     cardArea.style.transform = 'rotate3d(1, 2, 100, 360deg)';
 
 //     // Limpar a transição após a animação
 //     setTimeout(() => {
-//       firstCard.style.transition = '';
-//       firstCard.style.transform = '';
+//       cardArea.style.transition = '';
+//       cardArea.style.transform = '';
 //     }, animationDuration);
 //   } else {
-//     firstCard.scrollTo({
+//     cardArea.scrollTo({
 //       left: targetPosition,
 //       behavior: 'smooth'
 //     });
