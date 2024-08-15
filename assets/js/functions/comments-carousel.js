@@ -26,7 +26,8 @@ function commentsCarousel() {
   });
 
   arrowRight.addEventListener("click", (event) => {
-    //  event.preventDefault();
+     event.preventDefault();
+     
     const currentPosition = cardArea.scrollLeft;
     const targetPosition = currentPosition + scrollAmount;
     const scrollableWidth = cardArea.scrollWidth - cardArea.clientWidth;
