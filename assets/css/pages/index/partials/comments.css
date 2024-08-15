@@ -44,7 +44,7 @@
   /* left: -840px; */
   /* white-space: nowrap; */
   /* border: 1px solid blue; */
-  min-width: 1440px;
+  /* min-width: 1440px; */
 }
 
 .card-area::-webkit-scrollbar {
@@ -86,7 +86,7 @@
 }
 
 .first-card {
-  /* margin-left: 100px; */
+  margin-left: 100px;
   border: 1px solid green;
 }
 
