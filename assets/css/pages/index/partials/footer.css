@@ -9,7 +9,22 @@
 }
 
 .footer-infos--1 {
-  width: 177px;
+  width: 248px;
+  gap: 20px;
+}
+
+.footer-logo {
+  font: 32px var(--title);
+  color: var(--primary-text);
+  /* margin-bottom: 20px; */
+}
+
+
+.footer-text {
+  height: 66px;
+  font: 400 14px var(--text-regular);
+  color: rgba(0, 0, 0, 0.60);
+  /* margin-bottom: 25px; */
 }
 
 .footer-links--list {
@@ -30,13 +45,13 @@
   color: rgba(0, 0, 0, 0.60);
 
 }
-
-.footer-logo {
-  font: 32px var(--title);
-  color: var(--primary-text);
-}
-
 .footer-copyright {
+  position: relative;
   justify-content: space-between;
-  padding: 25px 0 88px 0;
+  padding: 25px;
+  p {
+    margin-top: 10px;
+    font: 400 14px var(--text-regular);
+    color: rgba(0, 0, 0, 0.60);
+  }
 }
