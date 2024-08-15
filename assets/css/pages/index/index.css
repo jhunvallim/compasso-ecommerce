@@ -7,11 +7,11 @@
 @import './partials/product-styles.css';
 @import './partials/comments.css';
 @import './partials/newsletter.css';
+@import './partials/footer.css';
 
 .homepage {
   position: relative;
   width: 1440px;
-  height: 4370px;
   margin: auto;
   background: var(--primary-color);
 }

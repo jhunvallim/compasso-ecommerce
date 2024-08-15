@@ -1,5 +1,7 @@
 .newsletter {
   min-height: 180px;
+  position: relative;
+  top: -100px;
   border-radius: 20px;
   background: var(--tertiary-color);
   gap: 100px;
