@@ -1,13 +1,15 @@
 .modal {
-  width: 100%;
+  max-width: 100vw;
+  /* min-width: 100vw; */
   height: 38px;
+  flex-shrink: 1;
   position: relative;
   top: -38px;
   transition: all 0.5s;
   transform: translateY(100%);
 }
 .modal-container {
-  width: 100%;
+  max-width: 100%;
   height: 100%;
   background: var(--tertiary-color);
   justify-content: center;
@@ -15,10 +17,11 @@
 }
 
 .modal-text {
-  width: 351px;
+  max-width: 351px;
   height: 19px;
   font: 400 14px/19px var(--text-regular);
   color: var(--tertiary-text);
+  flex: 2 0 0;
 }
 
 .modal-text--2 {
