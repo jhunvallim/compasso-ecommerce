@@ -75,10 +75,27 @@
   position: absolute;
   top: 297px;
   left: 750px;
+  animation: star-little 2s ease-in-out infinite;
 }
 
 .star-medium {
   position: absolute;
   top: 86px;
   left: 1255px;
+  animation: star-little 2.55s ease-in-out infinite;
+}
+
+@keyframes star-little {
+  0% {
+    transform: scale(.5);
+    opacity: .7;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(.5);
+    opacity: .7;
+  }
 }
