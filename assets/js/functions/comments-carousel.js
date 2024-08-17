@@ -2,7 +2,7 @@
 function commentClone() {
   const cardContainer = document.querySelector(".card-area");
   const firstCard = cardContainer.firstElementChild;
-  const clone = firstCard.cloneNode(true); // Clona o elemento e seus filhos
+  const clone = firstCard.cloneNode(true); 
   clone.style.marginLeft = "0px";
   clone.classList.add("copy-card");
   cardContainer.appendChild(clone);

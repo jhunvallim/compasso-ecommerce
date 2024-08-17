@@ -1,4 +1,4 @@
-export function closeModal() {
+export function closeDiscountModal() {
   document.getElementById('modal-button').addEventListener('click', function() {
       document.getElementById('modal').style.opacity = '0';
       document.getElementById('modal').style.transition = ' 0.5s ease';

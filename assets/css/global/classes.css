@@ -29,3 +29,12 @@
 .br {
   border: 1px solid red;
 }
+
+
+a:hover {
+  opacity: .7;
+}
+
+.not-hover:hover {
+  opacity: 1;
+}

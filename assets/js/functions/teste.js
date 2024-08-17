@@ -1,11 +1,18 @@
-const arrowRight = document.querySelector(".arrow-right");
-const arrowLeft = document.querySelector(".arrow-left");
-const cardArea = document.querySelector(".card-area");
+function shopDropdown() {
+  const navDropdown = document.querySelector('.nav-dropdown');
+  const navDropdownButton = document.querySelector('.nav-dropdown-button');
+  const dropdownArrow = document.querySelector('.dropdown-arrow');
 
+  navDropdownButton.addEventListener('click', () => {
+    navDropdown.show();
+    navDropdown.style.opacity = '1';
+    dropdownArrow.style.transform = 'rotateX(180deg)';
+  });
+  navDropdown.addEventListener('mouseleave', () => {
+    navDropdown.close();
+    navDropdown.style.opacity = '0';
+    dropdownArrow.style.transform = 'rotateX(0deg)';
+  });
+}
 
-// arrowRight.addEventListener("click", () => {
-//   cardArea.scrollTo({
-//     left: cardArea.lastElementChild.offsetLeft + 1600,
-//     behavior: "smooth",
-//   });
-// });
+shopDropdown();
