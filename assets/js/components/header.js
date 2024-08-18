@@ -55,7 +55,7 @@ export function renderHeader() {
         </nav>`;
       console.log(clientWidth);
     }
-    if (clientWidth <= 390) {
+    if (clientWidth <= 600) {
       header.innerHTML = `<nav class="nav flex-row">
         <dialog class="nav-390" id="nav-390">
           <ul class="flex-column">
