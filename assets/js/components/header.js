@@ -2,7 +2,7 @@ export function renderHeader() {
   document.addEventListener("DOMContentLoaded", () => {
     const header = document.querySelector(".header");
     const clientWidth = document.documentElement.clientWidth;
-    if (clientWidth >= 1440) {
+    if (clientWidth > 600) {
       header.innerHTML = `
     <nav class="nav container flex-row center">
           <a class="nav-logo not-hover" href="./">SHOP.CO</a>
