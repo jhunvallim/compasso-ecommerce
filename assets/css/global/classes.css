@@ -1,3 +1,11 @@
+.page-container {
+  position: relative;
+  width: 1440px;
+  margin: auto;
+  background-color: var(--primary-color);
+  
+}
+
 .container {
   width: 1240px;
   margin: 0 auto;
@@ -35,6 +43,26 @@ a:hover {
   opacity: .7;
 }
 
+.scale-hover:hover {
+  transition: transform 0.3 ease-in-out;
+  transform: scale(1.1) 
+}
+
+.scale-press:active {
+  transition: transform 0.3 ease-in-out;
+  transform: scale(0.9);
+}
+
 .not-hover:hover {
   opacity: 1;
+}
+
+@media (max-width: 390px) {
+  .container {
+    width: 390px;
+  }
+  .section-title {
+    font-size: 32px;
+    margin-top: 50px;
+  }
 }

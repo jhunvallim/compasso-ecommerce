@@ -13,7 +13,6 @@
 
 .comments-container:before {
   content: "";
-  content: "";
   position: absolute;
   z-index: 2;
   top: 0;
@@ -24,7 +23,6 @@
 }
 
 .comments-container:after {
-  content: "";
   content: "";
   position: absolute;
   z-index: 2;
@@ -40,11 +38,12 @@
   gap: 20px;
   position: relative;
   /* left: -420px; */
-  overflow: hidden;
+  overflow: scroll;
   /* left: -840px; */
-  /* white-space: nowrap; */
-  /* border: 1px solid blue; */
-  min-width: 1440px;
+  /* min-width: 1440px; */
+  &::-webkit-scrollbar {
+    width: 0px;
+  }
 }
 
 .arrow-left {
@@ -59,7 +58,6 @@
 }
 
 .arrow-right {
-  /* float: right; */
   position: relative;
   top: 0;
   left: calc(1240px - 30px);

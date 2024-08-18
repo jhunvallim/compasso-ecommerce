@@ -21,16 +21,15 @@
   position: relative;
   overflow: hidden;
   border-radius: 20px;
-  background:var(--primary-color);
-  
+  background:var(--primary-color);  
 }
 
 .small-card {
-  min-width: 407px;
+  width: 407px;
 }
 
 .big-card {
-  min-width: 684px;
+  width: 684px;
 }
 
 .small-card:hover, .big-card:hover {

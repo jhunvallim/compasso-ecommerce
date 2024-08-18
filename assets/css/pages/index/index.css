@@ -2,16 +2,10 @@
 @import './partials/modal.css';
 @import './partials/nav.css';
 @import './partials/hero.css';
-@import './partials/marcas.css';
+@import './partials/brands.css';
 @import './partials/products-container.css';
 @import './partials/product-styles.css';
 @import './partials/comments.css';
 @import './partials/newsletter.css';
 @import './partials/footer.css';
-
-.homepage {
-  position: relative;
-  width: 1440px;
-  margin: auto;
-  background: var(--primary-color);
-}
+@import './index-390.css';

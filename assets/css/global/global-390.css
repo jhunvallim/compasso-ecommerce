@@ -1,0 +1,7 @@
+@media (max-width: 390px) {
+  .page-container {
+    max-width: 390px;
+    overflow: hidden;
+  }
+
+}

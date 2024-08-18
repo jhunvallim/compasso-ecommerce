@@ -62,8 +62,6 @@
 }
 
 .view-all {
-  order: 3;
-  width: fit-content;
   padding: 16px 54px;
   font: 500 16px var(--text-regular);
   color: var(--primary-text);
