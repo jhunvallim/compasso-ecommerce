@@ -46,10 +46,15 @@
   gap: 12px;
   border-radius: 62px;
   background: var(--tertiary-color);
-  a {
+  font-family: var(--text-regular);
+  color: var(--tertiary-text);
+  &:hover {
+    opacity: 1;
+  }
+  /* a {
     font-family: var(--text-regular);
     color: var(--tertiary-text);
-  }
+  } */
 }
 
 .hero-details {
